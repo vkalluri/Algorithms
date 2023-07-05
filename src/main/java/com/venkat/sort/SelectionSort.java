@@ -2,6 +2,12 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Selection Sort is an in-place comparison-based sorting algorithm.
+ * It divides the input array into two parts: the subarray of sorted elements
+ * and the subarray of unsorted elements. It repeatedly selects the smallest
+ * (or largest) element from the unsorted part and swaps it with the first element of the unsorted part.
+ */
 public class SelectionSort {
 
 	public SelectionSort() {

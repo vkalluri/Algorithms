@@ -2,6 +2,13 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Heap Sort is a comparison-based sorting algorithm that uses a binary heap
+ * data structure. It first builds a max heap from the input array, then
+ * repeatedly extracts the maximum element from the heap and places
+ * it at the end of the sorted array. The remaining elements are re-heapified
+ * to maintain the max heap property.
+ */
 public class HeapSort {
 
 	public HeapSort() {

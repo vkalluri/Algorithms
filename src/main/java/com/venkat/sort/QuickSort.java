@@ -2,6 +2,12 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Quick Sort is a divide-and-conquer sorting algorithm. It selects a pivot element
+ * and partitions the array around the pivot, such that elements smaller
+ * than the pivot are placed before it and elements larger than the pivot
+ * are placed after it. The partitioning is performed recursively on the two subarrays.
+ */
 public class QuickSort {
 
 	public QuickSort() {

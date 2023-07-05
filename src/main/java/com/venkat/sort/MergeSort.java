@@ -2,6 +2,12 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Merge Sort is a divide-and-conquer sorting algorithm. It divides the array
+ * into two halves, recursively sorts them, and then merges the two sorted
+ * halves to produce a sorted array. It uses a merging technique to combine
+ * the two sorted subarrays into one.
+ */
 public class MergeSort {
 
 	public MergeSort() {

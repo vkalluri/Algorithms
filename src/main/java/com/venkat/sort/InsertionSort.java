@@ -2,6 +2,12 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Insertion Sort is a simple comparison-based sorting algorithm.
+ * It builds the final sorted array one item at a time. It iterates
+ * through the array and for each element, it finds the correct position
+ * in the sorted subarray and inserts it there by shifting the elements.
+ */
 public class InsertionSort {
 
 	public InsertionSort() {

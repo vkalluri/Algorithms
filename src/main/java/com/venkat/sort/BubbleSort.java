@@ -2,6 +2,12 @@ package com.venkat.sort;
 
 import java.util.Arrays;
 
+/**
+ * Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly compares adjacent
+ * elements and swaps them if they are in the wrong order. The pass-through the array is
+ * repeated until the array is sorted. It is called "Bubble Sort" because smaller elements
+ * "bubble" to the top of the array in each iteration.
+ */
 public class BubbleSort {
 
 	public BubbleSort() {
