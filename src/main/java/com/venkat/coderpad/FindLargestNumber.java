@@ -13,8 +13,8 @@ public class FindLargestNumber {
 	}
 
 	public static void main(String[] args) {
-//		List<Integer> numbers = Arrays.asList(10, 68, 97, 9, 21, 12);
-		List<Integer> numbers = Arrays.asList(1,61,9,0);
+		List<Integer> numbers = Arrays.asList(10, 68, 97, 9, 21, 12);
+//		List<Integer> numbers = Arrays.asList(1,61,9,0);
 
 		String largestNumber = findLargestNumber(numbers);
 		System.out.println("The largest number is " + largestNumber);
