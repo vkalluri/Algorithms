@@ -1,8 +1,5 @@
 package com.venkat.other;
 
-import java.util.Scanner;
-import java.util.stream.IntStream;
-
 public class DetermineWinner {
 	public static void main(String[] args) {
 

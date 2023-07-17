@@ -1,6 +1,5 @@
 package com.venkat.hackerrank;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class FruitLanding {

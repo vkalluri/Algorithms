@@ -115,9 +115,9 @@ public class MagicSquare {
 //        System.out.println("Minimal Total Cost: " + minCost);
 
         List<List<Integer>> s1 = new ArrayList<>();
-        s1.add(Arrays.asList(5, 3, 4));
-        s1.add(Arrays.asList(1, 5, 8));
-        s1.add(Arrays.asList(6, 4, 2));
+        s1.add(Arrays.asList(4, 8, 2));
+        s1.add(Arrays.asList(4, 5, 7));
+        s1.add(Arrays.asList(6, 1, 6));
 
         int minCost1 = formingMagicSquare(s1);
         System.out.println("Minimal Total Cost: " + minCost1);
@@ -150,6 +150,7 @@ public class MagicSquare {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
+                System.out.println(s.get(i).get(j) + "       " + magicSquare.get(i * 3 + j));
                 cost += Math.abs(s.get(i).get(j) - magicSquare.get(i * 3 + j));
             }
         }

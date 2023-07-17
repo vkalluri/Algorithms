@@ -1,10 +1,7 @@
 package com.venkat.coderpad;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.Queue;
 
 public class Tree<T> {
     private T value;
