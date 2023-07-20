@@ -172,19 +172,46 @@ public class ClimbingLeaderboard {
     }
 
     public static void main(String[] args) {
-        int[] ranked = {100, 100, 50, 40, 40, 20, 10};
-        int[] player = {5, 25, 50, 120};
-        int[] result = climbingLeaderboard(ranked, player);
-        for (int rank : result) {
-            System.out.println(rank);
-        }
+//        int[] ranked = {100, 100, 50, 40, 40, 20, 10};
+//        int[] player = {5, 25, 50, 120};
+//        int[] result = climbingLeaderboard(ranked, player);
+//        for (int rank : result) {
+//            System.out.println(rank);
+//        }
 
-        List<Integer> rankedList = List.of(100, 100, 50, 40, 40, 20, 10);
-        List<Integer> playerList = List.of(5, 25, 50, 120);
+        List<Integer> rankedList = List.of(100, 90, 90, 80);
+        List<Integer> playerList = List.of(70, 80, 105);
 
-        System.out.println(climbingLeaderboard(rankedList, playerList));
+        System.out.println(climbingLeaderboard1(rankedList, playerList));
         // Output: 4
         //         3
         //         1
+    }
+
+    public static List<Integer> climbingLeaderboard1(List<Integer> ranked, List<Integer> player) {
+        List<Integer> result = new ArrayList<>();
+        List<Integer> distinctRankedScores = getDistinctScores(ranked);
+
+        int n = distinctRankedScores.size();
+        int i = n - 1;
+
+        for (int score : player) {
+            while (i >= 0 && score >= distinctRankedScores.get(i)) {
+                i--;
+            }
+            result.add(i + 2); // Add 1 to convert from 0-indexed rank to 1-indexed rank
+        }
+
+        return result;
+    }
+
+    private static List<Integer> getDistinctScores(List<Integer> ranked) {
+        List<Integer> distinctScores = new ArrayList<>();
+        for (int score : ranked) {
+            if (distinctScores.isEmpty() || score != distinctScores.get(distinctScores.size() - 1)) {
+                distinctScores.add(score);
+            }
+        }
+        return distinctScores;
     }
 }
